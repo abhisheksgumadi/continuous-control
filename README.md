@@ -17,3 +17,27 @@ In this environment, a double-jointed arm can move to target locations.
 **Observation Space**: The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. 
 
 **Action Space**: Every entry in the action vector should be a number between -1 and 1.
+
+In order to consider the environment has been solved, the agent must get an average score of +30 over 100 consecutive episodes.
+
+## Getting Started
+
+### Repository
+
+Clone the repository - 
+```bash
+git clone https://github.com/abhisheksgumadi/continuous-control.git .
+```
+
+### Jupyter Notebook
+Install jupyter notebook with the command
+```
+pip install jupyter
+```
+Then, open the Navigation.ipynb notebook
+
+```
+jupyter notebook Navigation.ipynb
+```
+
+
