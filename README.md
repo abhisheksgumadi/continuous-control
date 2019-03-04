@@ -34,10 +34,30 @@ Install jupyter notebook with the command
 ```
 pip install jupyter
 ```
-Then, open the Navigation.ipynb notebook
+Then, open the Continuous_Control.ipynb notebook
 
 ```
-jupyter notebook Navigation.ipynb
+jupyter notebook Continuous_Control.ipynb
 ```
 
+### Unity Environment
+Download the Robotic Hand environment for Unity for MacOSX at [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher.app.zip)
+
+## Code Overview
+The code consists of the following modules
+```
+Continuous_Control.ipynb - the main notebook
+agent.py - defines the Agent that is being trained
+model.py - defines the PyTorch model for the Actor and the Critic network
+checkpoint_actor.pth - is the final trained Actor network
+checkpoint_critic.pth - is the final trained Critic network
+```
+
+Please follow the code in Navigation.ipynb to train the agent
+
+## Results
+
+The average reward collection over 100 episodes plotted in a graph below. It shows the reward on the Y axis for every episode on the X axis 
+
+![](images/reward.png)
 
