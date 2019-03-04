@@ -56,3 +56,5 @@ WEIGHT_DECAY = 0        # L2 weight decay
   - The idea is to implement a Policy Gradient algorithm that determines the appropriate policy with gradient methods. However, the change in the policy from one iteration to another is very slow in the neighbourhood of the previous policy in the high dimensional space.
 - [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952)
   - The idea behind using these technique for sampling from the replay buffer is that not all experiences are equal, some are more important than others in terms of reward, so naturally the agent should at least prioritize between the different experiences.
+- [Asynchronous Actor Critic](https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-8-asynchronous-actor-critic-agents-a3c-c88f72a5e9f2)
+  - The idea is to have a global network and multiple agents who all interact with the environment separately and send their gradients to the global network for optimization in an asynchronous way.
